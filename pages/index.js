@@ -28,7 +28,7 @@ export default function Home({ products, bannerData }){
             Speakers of many variations
           </p>
           <div className="products-container">
-            {products?.map(product => product.name)}
+            {products?.map((product, i) => <Product product={product} key={i} />)}
           </div>
       </div>
 
