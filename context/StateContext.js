@@ -107,6 +107,9 @@ export function StateContext({children}){
             onAdd,
             toggleCartItemQuantity,
             onRemove,
+            setCartItems,
+            setTotalPrice,
+            setTotalQuantities,
         }}>
             {children}
         </context.Provider>
